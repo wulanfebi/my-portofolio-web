@@ -1,0 +1,32 @@
+.animateBorder {
+    position: relative;
+  }
+  
+  .animateBorder::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(130deg, #7e22ce, #c026d3, #ea580c, #f97316);
+    background-size: 300% 300%;
+    z-index: -1;
+    border-radius: 12px;
+    filter: blur(15px);
+    opacity: 0.75;
+    animation: animate-border 3s infinite;
+  }
+  
+  @keyframes animate-border {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
