@@ -7,6 +7,16 @@ export default {
   ],
   theme: {
   	extend: {
+		keyframes: {
+			spinSlow: {
+				'0%': { transform: 'rotate(0deg)' },
+				'100%': { transform: 'rotate(360deg)' },
+			},
+		},
+		animation: {
+			'spin-slow': 'spinSlow 2s cubic-bezier(0.5, 0, 0.25, 1) forwards',
+			'slideInRight': 'slideInRight 1s ease-out',
+		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MyFoto from "../../../../assets/download (5).jpeg";
+import MyFoto from "../../../../assets/harvey.jpeg";
 import './interactiveImage.style.css';
 
 const InteractiveImage = () => {
