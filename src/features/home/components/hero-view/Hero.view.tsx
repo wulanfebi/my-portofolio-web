@@ -13,7 +13,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <div className="grid grid-cols-12 gap-3 items-center justify-center">
+        <div className="grid grid-cols-12  gap-3 min-h-[670px] items-center justify-center z-10">
             <div className="col-span-7 flex flex-col gap-5 justify-start">
                 <div className={`text-white text-8xl transition-all duration-200 font-bold whitespace-pre-line leading-tight ${animate ? 'opacity-100' : 'opacity-0'}`}>
                     {
@@ -36,11 +36,10 @@ const Hero = () => {
                     Let's Talk
                 </Button>
             </div>
-            <div className="col-span-5 flex flex-col gap-7 justify-center items-center">
-                
-                
+            <div className="col-span-5 -translate-y-20 justify-center">
                 <InteractiveImage />
             </div>
+            
         </div>
     );
 };
