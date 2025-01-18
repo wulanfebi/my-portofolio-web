@@ -24,7 +24,7 @@ const InteractiveImage = () => {
     return(
         <div className="items-center justify-center flex p-8 min-h-[450px]">
             <div
-                className="group relative w-[400px] h-[500px]"
+                className="group relative w-[350px] h-[470px]"
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
                 style={{
