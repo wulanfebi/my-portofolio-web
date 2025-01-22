@@ -3,6 +3,8 @@ import Hero from "../components/hero-view/Hero.view";
 import Navbar from "../components/navbar/Navbar.view";
 import StainlessGray from "@/assets/stainless-gray.jpeg";
 import AboutMe from "../components/about-me/AboutMe.view";
+import PersonalProject from "../components/personal-project/PersonalProject.view";
+import EducationTimeline from "../components/education-background/EducationHistory.view";
 
 const Home = () => {
   const [isAnimate, setAnimate] = useState(true);
@@ -37,6 +39,8 @@ const Home = () => {
       <div className={`mx-20 -translate-y-24 transition-all duration-1000 ${animateAboutMe && 'translate-y-32'} z-20`}>
         <AboutMe />
       </div>
+      <PersonalProject/>
+      <EducationTimeline />
     </div>
   );
 };

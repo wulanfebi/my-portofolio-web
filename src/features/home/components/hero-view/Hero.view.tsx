@@ -36,10 +36,10 @@ const Hero = () => {
                     Let's Talk
                 </Button>
             </div>
-            <div className="col-span-5 -translate-y-20 justify-center">
+            <div className="col-span-5 justify-center">
                 <InteractiveImage />
             </div>
-            
+            <p className={`text-gray-500 whitespace-nowrap text-base mb-20 ${animate ? 'opacity-100' : 'opacity-0'} transition-all duration-1000`}>Based in Malang, Indonesia</p>
         </div>
     );
 };

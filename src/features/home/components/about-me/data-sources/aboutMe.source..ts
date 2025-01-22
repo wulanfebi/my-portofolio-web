@@ -10,6 +10,7 @@ import tailwind from '@/assets/images/tailwind.jpg';
 import redux from '@/assets/images/redux.webp';
 import shadcn from '@/assets/images/shadcn.jpg';
 import bootstrap from '@/assets/images/bootstrap.jpg';
+import ionic from '@/assets/images/ionic.svg';
 
 export const MyCoreSkills = [
     'Algoritma',
@@ -70,6 +71,10 @@ export const FrontendDevelopment = [
 ];
 
 export const MobileDevelopment = [
+    {
+        name: 'Ionic',
+        image: ionic
+    },
     {
         name: 'ReactNative',
         image: reactNative,

@@ -4,14 +4,16 @@ import React from "react";
 const CardComponent = ({
   title,
   children,
-  description
+  description,
+  className
 }: {
-  title: string;
+  title?: string;
   children: React.ReactNode;
   description?: string;
+  className?: string;
 }) => {
   return (
-    <Card className="w-80 h-80 bg-[#DBD8E3] overflow-y-auto justify-center border-none items-center">
+    <Card className={`w-80 h-80 bg-gradient-to-tl from-zinc-900/80 to-zinc-800/50  border border-white/10 overflow-y-auto justify-center border-none items-center ${className}`}>
       <CardHeader>
         <CardTitle className="text-lg font-semibold">{title}</CardTitle>
         <CardDescription>{description}</CardDescription>
