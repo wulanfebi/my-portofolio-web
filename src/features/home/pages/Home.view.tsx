@@ -4,7 +4,8 @@ import Navbar from "../components/navbar/Navbar.view";
 import StainlessGray from "@/assets/stainless-gray.jpeg";
 import AboutMe from "../components/about-me/AboutMe.view";
 import PersonalProject from "../components/personal-project/PersonalProject.view";
-import EducationTimeline from "../components/education-background/EducationHistory.view";
+import EducationBackground from "../components/education-background/EducationBackground.view";
+import ContactMe from "../components/contact-me/ContactME.view";
 
 const Home = () => {
   const [isAnimate, setAnimate] = useState(true);
@@ -40,7 +41,10 @@ const Home = () => {
         <AboutMe />
       </div>
       <PersonalProject/>
-      <EducationTimeline />
+      <EducationBackground />
+      <div className={`mx-96 mt-20`}>
+        <ContactMe />
+      </div>
     </div>
   );
 };

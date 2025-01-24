@@ -19,7 +19,7 @@ const PersonalProject = () => {
     });
   }, [api]);    
   return (      
-    <div className="flex w-full h-auto py-5 flex-col items-start justify-center gap-5">
+    <div className="flex mt-12 w-full h-auto py-5 flex-col items-start justify-center gap-5">
       <div className="flex flex-col gap-3 mx-20">
         <span className="text-3xl bg-clip-text text-transparent bg-gradient-to-br from-[#7e22ce] to-[#f97316] font-semibold">
           Portofolio

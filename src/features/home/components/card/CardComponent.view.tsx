@@ -19,7 +19,7 @@ const CardComponent = ({
         <CardDescription>{description}</CardDescription>
       </CardHeader>
       <CardContent className="my-3">{children}</CardContent>
-      <style jsx>{`
+      <style>{`
         .overflow-y-auto {
           overflow-y: auto;
         }
